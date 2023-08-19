@@ -33,7 +33,7 @@ resource "aws_subnet" "public_2" {
   map_public_ip_on_launch = true
 
   tags = {
-    Name                        = "public-us-east-1b"
+    Name                        = "private-us-east-1b"
     "kubernetes.io/cluster/eks" = "shared" # required, allow eks to discover this subnet
     "kubernetes.io/cluster/elb" = 1        #required, allows eks to discover the subne and
     # and do public load balancer creaton in this subnet
@@ -61,7 +61,7 @@ resource "aws_subnet" "private_2" {
 
 
   tags = {
-    Name                        = "public-us-east-1b" # same as public 1
+    Name                        = "private-us-east-1b" # same as public 1
     "kubernetes.io/cluster/eks" = "shared"            # required, allow eks to discover this subnet
     "kubernetes.io/cluster/elb" = 1                   #required, allows eks to discover the subne and
     # and do public load balancer creaton in this subnet
