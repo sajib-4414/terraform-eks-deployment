@@ -18,6 +18,8 @@ cat ~/.aws/credentials
 - Create VPC
 - Create 4 subnets(2 (pub+private) sets) and Internet gateway
 - Create elastic IPs for NAT gateway IPs, Create NAT gateways
+- Creating route tables for the subnets
+- Create Route table association for attaching subnets to route tables
 ### Running the code:
 - ``terraform init`` -> to create the terraform engine onto aws, in windows creates an
 executable exe file.

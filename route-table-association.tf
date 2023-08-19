@@ -1,0 +1,22 @@
+# https://registry.terraform.io/providers/hashicorp/aws/3.44.0/docs/resources/route_table_association
+
+
+resource "aws_route_table_association" "public1" {
+  subnet_id      = aws_subnet.public_1.id
+  route_table_id = aws_route_table.public.id #comes from the route table
+}
+
+resource "aws_route_table_association" "public2" {
+  subnet_id      = aws_subnet.public_2.id
+  route_table_id = aws_route_table.public.id #comes from the route table
+}
+
+resource "aws_route_table_association" "private1" {
+  subnet_id      = aws_subnet.private_1.id
+  route_table_id = aws_route_table.private1.id #comes from the route table
+}
+
+resource "aws_route_table_association" "private2" {
+  subnet_id      = aws_subnet.private_2.id
+  route_table_id = aws_route_table.private2.id #comes from the route table
+}
