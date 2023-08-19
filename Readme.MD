@@ -18,7 +18,8 @@ cat ~/.aws/credentials
 - Create VPC
 - Create 4 subnets(2 (pub+private) sets)
 ### Running the code:
-- ``terraform init`` -> to create the terraform engine onto aws
+- ``terraform init`` -> to create the terraform engine onto aws, in windows creates an
+executable exe file.
 - when you are done writing, everytime issue ``terraform fmt`` to format the code in the terraform code directory
 - then you run ``terraform plan`` -> shows an **Preview output** what wil be done if you apply the code and also if there is any error
 - Then you apply/execute by -> ``terraform apply`` in the directory, it will execute all the files. 

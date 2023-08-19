@@ -18,7 +18,7 @@ resource "aws_vpc" "main" {
   tags = {
     Name = "main"
   }
-  
+
 }
 # to force some specific output
 # this is useful if any module wants to use that
