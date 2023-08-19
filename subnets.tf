@@ -62,8 +62,8 @@ resource "aws_subnet" "private_2" {
 
   tags = {
     Name                        = "private-us-east-1b" # same as public 1
-    "kubernetes.io/cluster/eks" = "shared"            # required, allow eks to discover this subnet
-    "kubernetes.io/cluster/elb" = 1                   #required, allows eks to discover the subne and
+    "kubernetes.io/cluster/eks" = "shared"             # required, allow eks to discover this subnet
+    "kubernetes.io/cluster/elb" = 1                    #required, allows eks to discover the subne and
     # and do public load balancer creaton in this subnet
   }
 }
